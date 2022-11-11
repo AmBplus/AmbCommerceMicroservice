@@ -3,6 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89DC6D5B-A5D8-43E4-A25A-268C99FC4F79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CE2DB6A8-8DC2-40CF-AD36-1475F409D274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbCommerceMicroservice.Application", "src\Core\AmbCommerceMicroservice.Application\AmbCommerceMicroservice.Application.csproj", "{FBA7B5C2-C06C-4269-A97C-B24E92A78F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbCommerceMicroservice.Domain", "src\Core\AmbCommerceMicroservice.Domain\AmbCommerceMicroservice.Domain.csproj", "{C44A9CED-39D3-4413-85AE-254456CAFF03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoint", "Endpoint", "{F5DEA29A-1B22-4FB3-B749-E07303CD5A43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbCommerceMicroservice.Api", "src\Endpoint\AmbCommerceMicroservice.Api\AmbCommerceMicroservice.Api.csproj", "{1BB482E4-6A1E-4656-AD96-29D36CED165F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{658FBB93-858D-411D-8270-3219EEC04CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbCommerceMicroservice.Persistance", "src\Infrastructure\AmbCommerceMicroservice.Persistance\AmbCommerceMicroservice.Persistance.csproj", "{052DBD31-A13D-4431-A909-55CB59969BAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +29,32 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE601540-F7F1-4F06-90C0-B71B3DF1AC89}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBA7B5C2-C06C-4269-A97C-B24E92A78F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA7B5C2-C06C-4269-A97C-B24E92A78F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA7B5C2-C06C-4269-A97C-B24E92A78F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA7B5C2-C06C-4269-A97C-B24E92A78F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C44A9CED-39D3-4413-85AE-254456CAFF03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C44A9CED-39D3-4413-85AE-254456CAFF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C44A9CED-39D3-4413-85AE-254456CAFF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C44A9CED-39D3-4413-85AE-254456CAFF03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB482E4-6A1E-4656-AD96-29D36CED165F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB482E4-6A1E-4656-AD96-29D36CED165F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB482E4-6A1E-4656-AD96-29D36CED165F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB482E4-6A1E-4656-AD96-29D36CED165F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052DBD31-A13D-4431-A909-55CB59969BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052DBD31-A13D-4431-A909-55CB59969BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052DBD31-A13D-4431-A909-55CB59969BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052DBD31-A13D-4431-A909-55CB59969BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE2DB6A8-8DC2-40CF-AD36-1475F409D274} = {89DC6D5B-A5D8-43E4-A25A-268C99FC4F79}
+		{FBA7B5C2-C06C-4269-A97C-B24E92A78F5E} = {CE2DB6A8-8DC2-40CF-AD36-1475F409D274}
+		{C44A9CED-39D3-4413-85AE-254456CAFF03} = {CE2DB6A8-8DC2-40CF-AD36-1475F409D274}
+		{F5DEA29A-1B22-4FB3-B749-E07303CD5A43} = {89DC6D5B-A5D8-43E4-A25A-268C99FC4F79}
+		{1BB482E4-6A1E-4656-AD96-29D36CED165F} = {F5DEA29A-1B22-4FB3-B749-E07303CD5A43}
+		{658FBB93-858D-411D-8270-3219EEC04CE7} = {89DC6D5B-A5D8-43E4-A25A-268C99FC4F79}
+		{052DBD31-A13D-4431-A909-55CB59969BAE} = {658FBB93-858D-411D-8270-3219EEC04CE7}
 	EndGlobalSection
 EndGlobal
